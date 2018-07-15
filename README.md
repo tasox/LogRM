@@ -64,4 +64,9 @@ The task is going to run "now"
 timeBomb -task now -ip 127.0.0.1 -newest <give a big number>
 ```
 
+The task is going to run one time at specific time.
+```
+timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number>
+```
+
 
