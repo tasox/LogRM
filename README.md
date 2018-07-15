@@ -59,7 +59,7 @@ TimeBomb is useful when you landed on a network host and you want to get a notif
 
 Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
 
-Tip2: if you want to get notifications only from users who have open RDP connection before logged out the you should uncomment the line 785
+Tip2: If you want to get notifications only from users who have open RDP connection(s) before logged out then you should uncomment the line 785
 
 The task is going to run now.
 ```
