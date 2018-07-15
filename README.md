@@ -49,3 +49,19 @@ PS> RMLog -user <username> -pass <password> -fips <file with ips> -users
 PS> RMLog -ip 127.0.0.1 -users
 ```
 
+##Time Bomb 
+
+TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. In the background function uses 4624,4647 events and search for current login users. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBob:
+
+1) now
+2) once
+3) trigger
+
+Tip: Give as much as possible amount of entries in -newest parameter. For example: 5000
+
+The task is going to run "now"
+```
+timeBomb -task now -ip 127.0.0.1 -newest <give a big number>
+```
+
+
