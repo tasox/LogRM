@@ -22,12 +22,14 @@ The RMLog searching into newest 10(default value) entries into all event types.
 
 ```
 PS> RMLog -user <username> -pass <password> -ip <remote winrm ip>
+PS> RMLog -user <username> -pass <password> -fips <file with ips>
 PS> RMLog -ip 127.0.0.1
 ```
 
 Search into specific eventID using -eventID parameter
 ```
 PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -eventID <eventID>
+PS> RMLog -user <username> -pass <password> -fips <file with ips> -eventID <eventID>
 PS> RMLog -ip 127.0.0.1 -eventID <eventID> 
 ```
 
@@ -35,6 +37,7 @@ If you use -newest parameter then you will be able to search into a specific qua
 
 ```
 PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -newest <number>
+PS> RMLog -user <username> -pass <password> -fips <file with ips> -newest <number>
 PS> RMLog -ip 127.0.0.1 -newest <number>
 ```
 
@@ -42,5 +45,7 @@ Providing the -users flag you will get as a result some valid usernames. The RML
 
 ```
 PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -users
+PS> RMLog -user <username> -pass <password> -fips <file with ips> -users
 PS> RMLog -ip 127.0.0.1 -users
 ```
+
