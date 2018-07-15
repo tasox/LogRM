@@ -18,8 +18,29 @@ Use can use the following event types:
 
 ### Examples
 
-The RMLog searching into newest 10(default value) entries in all event types.
+The RMLog searching into newest 10(default value) entries into all event types.
 
 ```
-PS> RMLog -user <username> -pass <password> -ip <host ip>
+PS> RMLog -user <username> -pass <password> -ip <remote winrm ip>
+PS> RMLog -ip 127.0.0.1
+```
+
+Search into specific eventID using -eventID parameter
+```
+PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -eventID <eventID>
+PS> RMLog -ip 127.0.0.1 -eventID <eventID> 
+```
+
+If you use -newest parameter then you will be able to search into a specific quantity of entries and in many cases your results will be more accurate.
+
+```
+PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -newest <number>
+PS> RMLog -ip 127.0.0.1 -newest <number>
+```
+
+Providing the -users flag you will get as a result some valid usernames. The RMLog searches into these event IDs 4624,4625,4776 
+
+```
+PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -users
+PS> RMLog -ip 127.0.0.1 -users
 ```
