@@ -1,5 +1,5 @@
 # RMLog
-RMLog is a powershell script which it uses windows events logs to gather information about internal network in a pentration testing engagment. It is not only useful for blue teams but also for red teams because some of its functionalities can be used for lateral movement. You will be able to use RMLog not only on a localhost machine but also in a remote machine using WinRM protocol which is by default enabled in a newly Windows versions. 
+RMLog is a powershell script which it uses windows event logs to gather information about internal network in a pentration testing engagment. It is not only useful for blue teams but also for red teams because some of its functionalities can be used for lateral movement. You will be able to use RMLog not only on a localhost machine but also in a remote machine using WinRM protocol which is by default enabled in a newly Windows versions. 
 
 
 ## Usage
