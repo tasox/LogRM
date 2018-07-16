@@ -16,6 +16,20 @@ Use can use the following event types:
 8) Information EventID (4688) - A new process has been created
 9) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
 
+## Configuration
+
+There is times where you need to do some configurations in WinRM protocol to be functional
+
+On client side (attacker):
+
+				winrm quickconfig
+				winrm set winrm/config/client '@{TrustedHosts="*"}'
+		
+On the server side (victim):
+		
+				Enable-PSRemoting -Force
+				winrm quickconfig
+
 ### Examples
 
 The RMLog searching into newest 10(default value) entries into all event types.
@@ -48,6 +62,8 @@ PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -users
 PS> RMLog -user <username> -pass <password> -fips <file with ips> -users
 PS> RMLog -ip 127.0.0.1 -users
 ```
+
+In earlier windows versions for example Windows server 2008, you can not have more than 5 winrm connections with the same host
 
 ## Time Bomb 
 
