@@ -18,7 +18,7 @@ Use can use the following event types:
 
 ## Configuration
 
-There is times where you need to do some configurations in WinRM protocol to be functional
+In some cases may be you need to configure WinRM protocol to be functional
 
 On client side (attacker):
 
