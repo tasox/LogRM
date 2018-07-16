@@ -22,13 +22,13 @@ There is times where you need to do some configurations in WinRM protocol to be 
 
 On client side (attacker):
 
-				winrm quickconfig
-				winrm set winrm/config/client '@{TrustedHosts="*"}'
+	winrm quickconfig
+	winrm set winrm/config/client '@{TrustedHosts="*"}'
 		
 On the server side (victim):
 		
-				Enable-PSRemoting -Force
-				winrm quickconfig
+	Enable-PSRemoting -Force
+	winrm quickconfig
 
 ### Examples
 
