@@ -88,6 +88,11 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 #### Example 1 - User is logged on
 
+![alt text](https://github.com/tasox/LogRM/blob/master/Use_is_LoggedOn.png)
+
+
+#### Example 2 - User is logged of
+
 ![alt text](https://github.com/tasox/LogRM/blob/master/User_LoggedOf.png)
 
 
