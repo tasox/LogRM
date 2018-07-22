@@ -79,18 +79,30 @@ TimeBomb is useful when you landed on a network host and you want to get a notif
 2) once
 3) trigger
 
-Timebom uses the following events:
+Timebomb uses the following events:
 
-1) Information Event ID (4778) - A session was reconnected to a Window Station
-2) Information Event ID (4779) - A session was disconnected from a Window Station
-3) Information Event ID (4800) - The workstation was locked
-4) Information Event ID (4801) - The workstation was unlocked
-5) Information Event ID (4802) - The screen saver was invoked
-6) Information Event ID (4803) - The screen saver was dismissed
+1) Information EventID (4624) - An account was successfully logged on
+2) Information EventID (4647) - User initiated logoff
+3) Information Event ID (4778) - A session was reconnected to a Window Station
+4) Information Event ID (4779) - A session was disconnected from a Window Station
+5) Information Event ID (4800) - The workstation was locked
+6) Information Event ID (4801) - The workstation was unlocked
+7) Information Event ID (4802) - The screen saver was invoked
+8) Information Event ID (4803) - The screen saver was dismissed
 
 Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
 
 Tip2: If you want to get notifications only from users who have open RDP connection(s) before logged out then you should uncomment the line 785
+
+
+#### An intro to windows events
+
+Before use timebomb we have to learn the differences between windows events. Events 4778/4779 is fired up when the user is currently logged in and uses switch button to move quickly between users without locked or logout from his terminal. Events 4800 is fired up when the user press the button from keyboard (window+L) or with his mouse on start button press lockout. On the other hand 4801 is fired up after using ctrl+alt+del. Sometimes users uses screensavers not only for powersaving but also to lock their machines, in this case 4802/4803 are taking place. 
+
+Information: In windows server 2008 events 4800/4801/4802/4803 are not created without a policy.
+
+
+### Usage
 
 The task is going to run now.
 ```
