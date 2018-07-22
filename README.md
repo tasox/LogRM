@@ -73,11 +73,20 @@ In earlier windows versions for example Windows server 2008, you can not have mo
 
 ## Time Bomb 
 
-TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. If the user has a remote desktop with another network host and after logging out left the remote desktop open then you could move into the network from an existing forgotten RDP connection. In the background function uses 4624,4647 events and search for current login users. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBob:
+TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. If the user has a remote desktop with another network host and after logging out left the remote desktop open then you could move into the network from an existing forgotten RDP connection. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBomb:
 
 1) now
 2) once
 3) trigger
+
+Timebom uses the following events:
+
+1) Information Event ID (4778) - A session was reconnected to a Window Station
+2) Information Event ID (4779) - A session was disconnected from a Window Station
+3) Information Event ID (4800) - The workstation was locked
+4) Information Event ID (4801) - The workstation was unlocked
+5) Information Event ID (4802) - The screen saver was invoked
+6) Information Event ID (4803) - The screen saver was dismissed
 
 Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
 
