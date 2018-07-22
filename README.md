@@ -1,5 +1,5 @@
 # RMLog
-RMLog is a post exploitation powershell script which it uses windows event logs to gather information about internal network in a pentration testing engagment. It is not only useful for blue teams but also for red teams because some of its functionalities can be used for lateral movement. You will be able to use RMLog not only on a localhost machine but also in a remote machine using WinRM protocol which is by default enabled in a newly Windows versions. 
+LogRM is a post exploitation powershell script which it uses windows event logs to gather information about internal network in a pentration testing engagment. It is not only useful for blue teams but also for red teams because some of its functionalities can be used for lateral movement. You will be able to use LogRM not only on a localhost machine but also in a remote machine using WinRM protocol which is by default enabled in a newly Windows versions. 
 
 
 ## Configuration
@@ -34,19 +34,19 @@ Use can use the following event types:
 
 ### Examples
 
-The RMLog searching into newest 10(default value) entries into all event types.
+The LogRM searching into newest 10(default value) entries into all event types.
 
 ```
-PS> RMLog -user <username> -pass <password> -ip <remote winrm ip>
-PS> RMLog -user <username> -pass <password> -fips <file with ips>
-PS> RMLog -ip 127.0.0.1
+PS> LogRM -user <username> -pass <password> -ip <remote winrm ip>
+PS> LogRM -user <username> -pass <password> -fips <file with ips>
+PS> LogRM -ip 127.0.0.1
 ```
 
 Search into specific eventID using -eventID parameter
 ```
-PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -eventID <eventID>
-PS> RMLog -user <username> -pass <password> -fips <file with ips> -eventID <eventID>
-PS> RMLog -ip 127.0.0.1 -eventID <eventID> 
+PS> LogRM -user <username> -pass <password> -ip <remote winrm ip> -eventID <eventID>
+PS> LogRM -user <username> -pass <password> -fips <file with ips> -eventID <eventID>
+PS> LogRM -ip 127.0.0.1 -eventID <eventID> 
 ```
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/example1_.png)
@@ -54,19 +54,19 @@ PS> RMLog -ip 127.0.0.1 -eventID <eventID>
 If you use -newest parameter then you will be able to search into a specific quantity of entries and in many cases your results will be more accurate.
 
 ```
-PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -newest <number>
-PS> RMLog -user <username> -pass <password> -fips <file with ips> -newest <number>
-PS> RMLog -ip 127.0.0.1 -newest <number>
+PS> LogRM -user <username> -pass <password> -ip <remote winrm ip> -newest <number>
+PS> LogRM -user <username> -pass <password> -fips <file with ips> -newest <number>
+PS> LogRM -ip 127.0.0.1 -newest <number>
 ```
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/example2_.png)
 
-Providing the -users flag you will get as a result some valid usernames. The RMLog searches into these event IDs 4624,4625,4776 
+Providing the -users flag you will get as a result some valid usernames. The LogRM searches into these event IDs 4624,4625,4776 
 
 ```
-PS> RMLog -user <username> -pass <password> -ip <remote winrm ip> -users
-PS> RMLog -user <username> -pass <password> -fips <file with ips> -users
-PS> RMLog -ip 127.0.0.1 -users
+PS> LogRM -user <username> -pass <password> -ip <remote winrm ip> -users
+PS> LogRM -user <username> -pass <password> -fips <file with ips> -users
+PS> LogRM -ip 127.0.0.1 -users
 ```
 
 In earlier windows versions for example Windows server 2008, you can not have more than 5 winrm connections with the same host
