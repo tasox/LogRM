@@ -142,7 +142,10 @@ From the screenshot above we can understand that the user hackme\tas disconnecte
 
 There is cases where it's very difficult to understand if any user is currently logged in. What if the user uses two times or more the switch button? As we said switch is a different event, is not logof (4647) is not lockout(4800/4801/4802/4803) but it is the event (4778/4779)
 
-#### 
+![alt_text](https://github.com/tasox/LogRM/blob/master/two_times_switch.png)
+
+##### Description of the above image
+In the image above we can observe that the use hackme\administrator disconnected from his terminal and connected to hackme\tas nonetheless the user hackme\tas unlocked the workstation the results is false negatives and extra information in the results is required in regard to the events (4778/4779)  
 
 The task is going to run once at specific time.
 ```
