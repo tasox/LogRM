@@ -143,6 +143,7 @@ RDPConn function gets only valid incoming RDP connections into the compromised h
 
 ```
 PS> RDPConn
+PS> RDPConn -ip 127.0.0.1
 ```
 
 #### Example 1
