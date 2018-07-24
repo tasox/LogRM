@@ -141,6 +141,14 @@ PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give
 
 RDPConn function gets only valid incoming RDP connections into the compromised host. By using this function you will be able to observe which users from which machines have connection with our host without interrupt their connection if we tried to login with the same credentials.
 
+RDPConn function uses the following events
+
+1) User authentication succeeded - 1149
+2) Session reconnection succeeded - 25
+3) Session has been disconneted - 24
+
+Note: In the next update i will add event 21 for remote desktop services.
+
 ```
 PS> RDPConn
 PS> RDPConn -ip 127.0.0.1
