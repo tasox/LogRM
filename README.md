@@ -95,7 +95,7 @@ Tip1: Give as much as possible amount of entries in -newest parameter. For examp
 Tip2: If you want to get notifications only from users who have open RDP connection(s) before logged out then you should uncomment the line 785
 
 
-#### An intro to windows events
+###  Intro to Windows events
 
 Before use timebomb we have to learn the differences between windows events. Events 4778/4779 is fired up when the user is currently logged in and uses switch button to move quickly between users without locked or logout from his terminal. Events 4800 is fired up when the user press the button from keyboard (window+L) or with his mouse on start button press lockout. On the other hand 4801 is fired up after using ctrl+alt+del. Sometimes users uses screensavers not only for powersaving but also to lock their machines, in this case 4802/4803 are taking place. 
 
@@ -117,14 +117,14 @@ PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server i
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Example 1 - User is logged of
+#### Example 1 - User is logged of -> Login
+
+![alt text](https://github.com/tasox/LogRM/blob/master/user_is_loggedOf.png)
+
+
+#### Example 2 - Screen saver is invoked -> Login
 
 ![alt text]()
-
-
-#### Example 2 - User is logged of
-
-![alt text](https://github.com/tasox/LogRM/blob/master/User_LoggedOf.png)
 
 
 The task is going to run once at specific time.
