@@ -124,8 +124,12 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 #### Example 2 - Screen saver is invoked -> Login
 
-![alt text]()
+![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked.png)
 
+
+##### And a few seconds if you run the script again you will see the following result
+
+![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked2.png)
 
 The task is going to run once at specific time.
 ```
