@@ -131,11 +131,11 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 ![alt text](https://github.com/tasox/LogRM/blob/master/scrren_saver_is_invoked2.png)
 
-#### Example 3 - User switch between accounts -> Login (medium)
+#### Example 3 - Switch between users -> Login (medium)
 
 In this scenario the user does not log of nor lock out from his account but instead of this uses "switch" between different accounts. The script will inform us that user's workstation is locked but this doesn't mean in all cases as you will see later that the user is not inside. To accomplish a successful login we have to observe the time of user's disconnection.
 
-![alt_text]()
+![alt_text](https://github.com/tasox/LogRM/blob/master/switch_between_users.png)
 
 
 The task is going to run once at specific time.
