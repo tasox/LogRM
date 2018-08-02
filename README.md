@@ -158,9 +158,9 @@ RDPConn function gets only valid incoming RDP connections into the compromised h
 
 RDPConn function uses the following events
 
-1) User authentication succeeded - 1149
-2) Session reconnection succeeded - 25
-3) Session has been disconneted - 24
+1)  - 21
+2) Session has been disconneted - 24
+3) Session reconnection succeeded - 25
 
 Note: In the next update i will add event 21 for remote desktop services.
 
