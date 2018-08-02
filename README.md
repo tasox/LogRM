@@ -143,7 +143,8 @@ PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -rev
 
 #### Scenario 3 - User is logged of and TimeBomb sent a notification to our remote server.
 
-![alt text]()
+![alt text](https://github.com/tasox/LogRM/blob/master/timebomb_notification2.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/timebomb_notification.png)
 
 
 The task is going to run and stop at specific time.
