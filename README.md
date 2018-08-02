@@ -175,6 +175,12 @@ PS> RDPConn -ip 127.0.0.1
 
 
 
+## CobaltStrike -and LogRM
+
+You are able to import LogRM script into cobaltstrike and use 
+
+
+
 ## Authors
 
 * TasoX (@taso_x)
