@@ -92,8 +92,6 @@ Timebomb uses the following events:
 
 Tip1: Give as much as possible amount of entries in -newest parameter. For example: 5000
 
-Tip2: If you want to get notifications only from users who have open RDP connection(s) before logged out then you should uncomment the line 785
-
 
 ###  Intro to Windows events
 
