@@ -49,7 +49,7 @@ PS> LogRM -user <username> -pass <password> -fips <file with ips> -eventID <even
 PS> LogRM -ip 127.0.0.1 -eventID <eventID> 
 ```
 
-![alt text](https://github.com/tasox/LogRM/blob/master/example1_.png)
+![alt text](https://github.com/tasox/LogRM/blob/master/Screenshots/example1_.png)
 
 If you use -newest parameter then you will be able to search into a specific quantity of entries and in many cases your results will be more accurate.
 
