@@ -59,7 +59,7 @@ PS> LogRM -user <username> -pass <password> -fips <file with ips> -newest <numbe
 PS> LogRM -ip 127.0.0.1 -newest <number>
 ```
 
-![alt text](https://github.com/tasox/LogRM/blob/master/example2_.png)
+![alt text](https://github.com/tasox/LogRM/blob/master/Screenshots/example2_.png)
 
 Providing the -users flag you will get as a result some valid usernames. The LogRM searches into these event IDs 4624,4625,4776 
 
@@ -127,12 +127,12 @@ Using timeBomb we can discover if any user is loggedOn in the case which we want
 
 #### Scenario 1 - User used RDP to connect to the remote host, after while host is locked
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/User_RDP.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/User_RDP.png)
 
 
 #### Scenario 2 - User is connected with RDP to remote host, is currently in
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/User_LoggedOn_RDP2.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/User_LoggedOn_RDP2.png)
 
 
 The task is going to run once at specific time.
@@ -143,8 +143,8 @@ PS> timeBomb -task once -at 15:00 -ip 127.0.0.1 -newest <give a big number> -rev
 
 #### Scenario 3 - User is logged of and TimeBomb sent a notification to our remote server.
 
-![alt text](https://github.com/tasox/LogRM/blob/master/timebomb_notification2.png)
-![alt_text](https://github.com/tasox/LogRM/blob/master/timebomb_notification.png)
+![alt text](https://github.com/tasox/LogRM/blob/master/Screenshots/timebomb_notification2.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/timebomb_notification.png)
 
 
 The task is going to run and stop at specific time.
@@ -171,7 +171,7 @@ PS> RDPConn -ip 127.0.0.1
 
 #### Scenario 1
 
-![alt text](https://github.com/tasox/LogRM/blob/master/RDP_winrm.png)
+![alt text](https://github.com/tasox/LogRM/blob/master/Screenshots/RDP_winrm.png)
 
 
 
@@ -179,11 +179,11 @@ PS> RDPConn -ip 127.0.0.1
 
 You are able to import LogRM script into cobaltstrike and use powerpick or powershell to execute it.
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/cobaltStrike_rdpconn.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/cobaltStrike_rdpconn.png)
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/cobaltStrike_timeBomb.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/cobaltStrike_timeBomb.png)
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/cobaltStrike_errorLogin.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/cobaltStrike_errorLogin.png)
 
 
 ## Authors
