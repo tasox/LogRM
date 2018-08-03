@@ -117,12 +117,12 @@ PS> timeBomb -task now -ip 127.0.0.1 -newest <give a big number> -reverseHost <P
 
 ### Discover if any user in loggedOn
 
-Using timeBomb we can discover if any user is loggedOn in the case which we want to use RDP to connect with the host. TimeBomb will make some calculation between the events and it can answer to in the following questions:
+Using timeBomb you can discover if any user is loggedOn in the case which we want to use RDP to connect with the host. TimeBomb will make some calculation between the events and behind the scene asks the following questions:
 
-1) It will also check for loggof?
-2) What if the user does not logof but switch between the account?
-3) What if the user have used lock-out button?
-4) What if some one use RDP to connect to the network host? 
+1) Is anyone loggof?
+2) Is anyone who use the switch button?
+3) Is anyone who use lock-out button?
+4) Is anyone connected with RDP to network host? 
 5) what If a screensaver is lock the host? 
 
 #### Scenario 1 - User used RDP to connect to the remote host, after while host is locked
