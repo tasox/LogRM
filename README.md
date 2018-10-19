@@ -197,7 +197,7 @@ In a domain environment after implementing a GPO for to enforce applocker policy
 
 Windows Defender function compines 2 builtin-in powershell functions Get-Threat, Get-ThreatDetection to enumerate threat history.
 
-![alt_text]()
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/windows_defender.png)
 
 ## Authors
 
