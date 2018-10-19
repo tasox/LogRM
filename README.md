@@ -190,8 +190,8 @@ You are able to import LogRM script into cobaltstrike and use powerpick or power
 
 In a domain environment after implementing a GPO for to enforce applocker policy, you can use log files 8007,8004 to observe malicious actions.
 
-![alt_text]
-![alt_text]
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/applocker_8004.png)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/applocker_8007.png)
 
 ## Windows Defender logs
 
