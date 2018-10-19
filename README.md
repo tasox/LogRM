@@ -193,8 +193,11 @@ In a domain environment after implementing a GPO for to enforce applocker policy
 ![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/applocker_8004.png)
 ![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/applocker_8007.png)
 
-## Windows Defender logs
+## Windows Defender history
 
+Windows Defender function compines 2 builtin-in powershell functions Get-Threat, Get-ThreatDetection to enumerate threat history.
+
+![alt_text]()
 
 ## Authors
 
