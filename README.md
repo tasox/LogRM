@@ -79,6 +79,10 @@ PS> LogRM -ip 127.0.0.1 -users
 
 In earlier windows versions for example Windows server 2008, you can not have more than 5 winrm connections with the same host
 
+## RunAS Functionality (New)
+
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/runas_green.png)
+
 ## Time Bomb 
 
 TimeBomb is useful when you landed on a network host and you want to get a notification when the user is logged of and be able to use an RDP (Remote Desktop) connection. If the user has a remote desktop with another network host and after logging out left the remote desktop open then you could move into the network from an existing forgotten RDP connection. You can create a timer without creating or editing windows schedules and leave the host untouched. You have 3 option when you create a timeBomb:
