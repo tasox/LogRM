@@ -24,14 +24,20 @@ Use can use the following event types:
 1) Information EventID (4624) - An account was successfully logged on
 2) Information EventID (4625) - An account failed to log on
 3) Information EventID (4728) - A member was added to a security-enabled global group
-4) *Information EventID (4729) - A member was removed from a security-enabled global group* (New)
+4) Information EventID (4729) - A member was removed from a security-enabled global group (*New*)
 4) Information EventID (4732) - A member was added to a security-enabled local group
 5) Information EventID (4733) - A member was removed from a security-enabled local group
-6) Information EventID (4738) - A user account was changed
-7) Information EventID (4647) - User initiated logoff
-8) Information EventID (4688) - A new process has been created
-9) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
-10)
+6) Information EventID (4756) - A member was added to a security-enabled universal group (*New*)
+7) Information EventID (4757) - A member was removed from security-enabled universal group (*New*)
+8) Information EventID (4738) - A user account was changed
+9) Information EventID (4647) - User initiated logoff
+10) Information EventID (4688) - A new process has been created
+11) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
+12) Information EventID (4634) - An account was logged of (*New*)
+13) Information EventID (400,500,501,600) - PowerShell Logs (*New*)
+14) Information EventID (8004) - Microsoft-Windows-applocker/EXE and DLL(*New*)
+15) Information EventID (8007) - Microsoft-Windows-applocker/MSI and Script (*New*)
+
 
 
 ### Scenarios
