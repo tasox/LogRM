@@ -31,12 +31,17 @@ Use can use the following event types:
 7) Information EventID (4757) - A member was removed from security-enabled universal group (*New*)
 8) Information EventID (4738) - A user account was changed
 9) Information EventID (4647) - User initiated logoff
-10) Information EventID (4688) - A new process has been created
-11) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
-12) Information EventID (4634) - An account was logged of (*New*)
-13) Information EventID (400,500,501,600) - PowerShell Logs (*New*)
-14) Information EventID (8004) - Microsoft-Windows-applocker/EXE and DLL(*New*)
-15) Information EventID (8007) - Microsoft-Windows-applocker/MSI and Script (*New*)
+10) Information EventID (4648) - A logon was attempted using explicit credentials (*New*)
+11) Information EventID (4688) - A new process has been created
+12) Information EventID (4720) - A user account was created (*New*)
+13) Information EventID (4738) - A user account was changed (*New*)
+14) Information EventID (4776) - The domain controller attempted to validate the credentials for an account
+15) Information EventID (4634) - An account was logged of (*New*)
+16) Information EventID (5136) - A directory service object was modified(*New*)
+17) Information EventID (400,500,501,600) - PowerShell Logs (*New*)
+18) Information EventID (8001,8002,8003) - Login using NTLM Hash (*New*)
+19) Information EventID (8004) - Microsoft-Windows-applocker/EXE and DLL(*New*)
+20) Information EventID (8007) - Microsoft-Windows-applocker/MSI and Script (*New*)
 
 
 
