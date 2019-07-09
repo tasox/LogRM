@@ -218,7 +218,7 @@ Windows Defender function compines 2 builtin-in powershell functions Get-Threat,
 
 ## Windows Logs with Neo4j 
 
-![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/)
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/event4624_neo4j_query1.png)
 
 ## Authors
 
