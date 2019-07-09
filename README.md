@@ -39,7 +39,7 @@ Use can use the following event types:
 15) Information EventID (4634) - An account was logged of (*New*)
 16) Information EventID (5136) - A directory service object was modified(*New*)
 17) Information EventID (400,500,501,600) - PowerShell Logs (*New*)
-18) Information EventID (8001,8002,8003) - Login using NTLM Hash (*New*)
+18) Information EventID (8001,8002,8003) - Login using NTLM Hash (*Upcoming*)
 19) Information EventID (8004) - Microsoft-Windows-applocker/EXE and DLL(*New*)
 20) Information EventID (8007) - Microsoft-Windows-applocker/MSI and Script (*New*)
 
@@ -215,6 +215,10 @@ In a domain environment after implementing a GPO for to enforce applocker policy
 Windows Defender function compines 2 builtin-in powershell functions Get-Threat, Get-ThreatDetection to enumerate threat history.
 
 ![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/windows_defender.png)
+
+## Windows Logs with Neo4j 
+
+![alt_text](https://github.com/tasox/LogRM/blob/master/Screenshots/)
 
 ## Authors
 
